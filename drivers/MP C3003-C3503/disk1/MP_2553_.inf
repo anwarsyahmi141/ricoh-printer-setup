@@ -1,0 +1,295 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 12/18/2025,3.1.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%Gestetner%=Gestetner,NTamd64
+%infotec%=infotec,NTamd64
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[Gestetner.NTamd64]
+"Gestetner MP 2553 PCL 6"=Gestetner_MP_2553_64.dat,USBPRINT\GestetnerMP_2553D72F,LPTENUM\GestetnerMP_2553D72F,GestetnerMP_2553D72F
+"Gestetner MP 3053 PCL 6"=Gestetner_MP_3053_64.dat,USBPRINT\GestetnerMP_30532A3E,LPTENUM\GestetnerMP_30532A3E,GestetnerMP_30532A3E
+"Gestetner MP 3353 PCL 6"=Gestetner_MP_3353_64.dat,USBPRINT\GestetnerMP_33532ACE,LPTENUM\GestetnerMP_33532ACE,GestetnerMP_33532ACE
+
+[infotec.NTamd64]
+"infotec MP 2553 PCL 6"=infotec_MP_2553_64.dat,USBPRINT\infotecMP_25532B73,LPTENUM\infotecMP_25532B73,infotecMP_25532B73
+"infotec MP 3053 PCL 6"=infotec_MP_3053_64.dat,USBPRINT\infotecMP_305317E3,LPTENUM\infotecMP_305317E3,infotecMP_305317E3
+"infotec MP 3353 PCL 6"=infotec_MP_3353_64.dat,USBPRINT\infotecMP_33531713,LPTENUM\infotecMP_33531713,infotecMP_33531713
+
+[LANIER.NTamd64]
+"LANIER MP 2553 PCL 6"=LANIER_MP_2553_64.dat,USBPRINT\LANIERMP_2553F450,LPTENUM\LANIERMP_2553F450,LANIERMP_2553F450
+"LANIER MP 3053 PCL 6"=LANIER_MP_3053_64.dat,USBPRINT\LANIERMP_30530943,LPTENUM\LANIERMP_30530943,LANIERMP_30530943,LANIERMP_3053_943
+"LANIER MP 3353 PCL 6"=LANIER_MP_3353_64.dat,USBPRINT\LANIERMP_335309B1,LPTENUM\LANIERMP_335309B1,LANIERMP_335309B1,LANIERMP_3353_9B1
+
+[NRG.NTamd64]
+"NRG MP 2553 PCL 6"=NRG_MP_2553_64.dat,USBPRINT\NRGMP_2553169B,LPTENUM\NRGMP_2553169B,NRGMP_2553169B
+"NRG MP 3053 PCL 6"=NRG_MP_3053_64.dat,USBPRINT\NRGMP_3053EB8A,LPTENUM\NRGMP_3053EB8A,NRGMP_3053EB8A
+"NRG MP 3353 PCL 6"=NRG_MP_3353_64.dat,USBPRINT\NRGMP_3353EB7A,LPTENUM\NRGMP_3353EB7A,NRGMP_3353EB7A
+
+[Ricoh.NTamd64]
+"RICOH MP 2553 PCL 6"=RICOH_MP_2553_64.dat,USBPRINT\RICOHMP_2553A69D,LPTENUM\RICOHMP_2553A69D,RICOHMP_2553A69D
+"RICOH MP 3053 PCL 6"=RICOH_MP_3053_64.dat,USBPRINT\RICOHMP_30535B8C,LPTENUM\RICOHMP_30535B8C,RICOHMP_30535B8C
+"RICOH MP 3353 PCL 6"=RICOH_MP_3353_64.dat,USBPRINT\RICOHMP_33535B7C,LPTENUM\RICOHMP_33535B7C,RICOHMP_33535B7C
+
+[SAVIN.NTamd64]
+"SAVIN MP 2553 PCL 6"=SAVIN_MP_2553_64.dat,USBPRINT\SAVINMP_25530AF0,LPTENUM\SAVINMP_25530AF0,SAVINMP_25530AF0,SAVINMP_2553_AF0
+"SAVIN MP 3053 PCL 6"=SAVIN_MP_3053_64.dat,USBPRINT\SAVINMP_3053F7E1,LPTENUM\SAVINMP_3053F7E1,SAVINMP_3053F7E1
+"SAVIN MP 3353 PCL 6"=SAVIN_MP_3353_64.dat,USBPRINT\SAVINMP_3353F711,LPTENUM\SAVINMP_3353F711,SAVINMP_3353F711
+
+
+[Gestetner_MP_2553_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[Gestetner_MP_3053_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[Gestetner_MP_3353_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[infotec_MP_2553_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[infotec_MP_3053_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[infotec_MP_3353_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[LANIER_MP_2553_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[LANIER_MP_3053_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[LANIER_MP_3353_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[NRG_MP_2553_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[NRG_MP_3053_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[NRG_MP_3353_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[RICOH_MP_2553_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[RICOH_MP_3053_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[RICOH_MP_3353_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[SAVIN_MP_2553_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[SAVIN_MP_3053_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+[SAVIN_MP_3353_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1mcd.psz
+LanguageMonitor = rica1mlm,rica1mlm.dll
+
+
+[Gestetner_MP_2553_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_MP_3053_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_MP_3353_64.dat.Services]
+AddService = ,0x2
+
+[infotec_MP_2553_64.dat.Services]
+AddService = ,0x2
+
+[infotec_MP_3053_64.dat.Services]
+AddService = ,0x2
+
+[infotec_MP_3353_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_MP_2553_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_MP_3053_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_MP_3353_64.dat.Services]
+AddService = ,0x2
+
+[NRG_MP_2553_64.dat.Services]
+AddService = ,0x2
+
+[NRG_MP_3053_64.dat.Services]
+AddService = ,0x2
+
+[NRG_MP_3353_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_MP_2553_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_MP_3053_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_MP_3353_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_MP_2553_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_MP_3053_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_MP_3353_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica1mui.dll,rica89ui.dll
+rica1mui.irj,MP_2553_.irj
+rica1mui.rdj
+rica1mui.rcf,MP_2553_.rcf
+rica1mug.dll,rica89ug.dll
+rica1mug.miz
+rica1mur.dll,rica89ur.dll
+rica1mgr.dll,rica89gr.dll
+rica1mci.dll,rica89ci.dll
+rica1mcd.dll,rica89cd.dll
+rica1mcd.psz
+rica1mcf.cfz
+rica1mcl.ini
+rica1mch.chm,rica89ch.chm
+rica1mcz.dlz,rica89cz.dlz
+rica1mcj.dll,rica89cj.dll
+rica1mct.dll,rica89ct.dll
+rica1mcb.dll,rica89cb.dll
+
+[RPD_COMMON_SYS32]
+rica1mlm.dll,rica89lm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD01Md64.dll,RD01Md64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica1mui.dll
+DriverFile	= rica1mgr.dll
+HelpFile	= rica1mch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica89ui.dll	= 1
+MP_2553_.irj	= 1
+rica1mui.rdj	= 1
+MP_2553_.rcf	= 2
+rica89ug.dll	= 1
+rica1mug.miz	= 1
+rica89ur.dll	= 1
+rica89gr.dll	= 1
+rica89ci.dll	= 1
+rica89cd.dll	= 1
+rica1mcd.psz	= 1
+rica1mcf.cfz	= 1
+rica1mcl.ini	= 1
+rica89ch.chm	= 1
+rica89cz.dlz	= 1
+rica89cj.dll	= 1
+rica89ct.dll	= 1
+rica89cb.dll	= 1
+rica89lm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+RD01Md64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+Gestetner="Gestetner"
+infotec="infotec"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

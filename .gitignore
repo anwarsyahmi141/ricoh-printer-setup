@@ -1,0 +1,12 @@
+# Build artifacts
+*.pdb
+*.tmp
+*.obj
+test*
+*.bak
+
+# OS generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

@@ -1,0 +1,187 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 12/18/2025,3.1.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[LANIER.NTamd64]
+"LANIER SP 3600SF PCL 6"=LANIER_SP_3600SF_64.dat,USBPRINT\LANIERSP_3600SF38B4,LPTENUM\LANIERSP_3600SF38B4,LANIERSP_3600SF38B4
+"LANIER SP 3610SF PCL 6"=LANIER_SP_3610SF_64.dat,USBPRINT\LANIERSP_3610SFC4B5,LPTENUM\LANIERSP_3610SFC4B5,LANIERSP_3610SFC4B5
+
+[NRG.NTamd64]
+"NRG SP 3600SF PCL 6"=NRG_SP_3600SF_64.dat,USBPRINT\NRGSP_3600SF4363,LPTENUM\NRGSP_3600SF4363,NRGSP_3600SF4363
+"NRG SP 3610SF PCL 6"=NRG_SP_3610SF_64.dat,USBPRINT\NRGSP_3610SFBD62,LPTENUM\NRGSP_3610SFBD62,NRGSP_3610SFBD62
+
+[Ricoh.NTamd64]
+"RICOH SP 3600SF PCL 6"=RICOH_SP_3600SF_64.dat,USBPRINT\RICOHSP_3600SF5561,LPTENUM\RICOHSP_3600SF5561,RICOHSP_3600SF5561
+"RICOH SP 3610SF PCL 6"=RICOH_SP_3610SF_64.dat,USBPRINT\RICOHSP_3610SFA960,LPTENUM\RICOHSP_3610SFA960,RICOHSP_3610SFA960
+
+[SAVIN.NTamd64]
+"SAVIN SP 3600SF PCL 6"=SAVIN_SP_3600SF_64.dat,USBPRINT\SAVINSP_3600SFB84D,LPTENUM\SAVINSP_3600SFB84D,SAVINSP_3600SFB84D
+"SAVIN SP 3610SF PCL 6"=SAVIN_SP_3610SF_64.dat,USBPRINT\SAVINSP_3610SF464C,LPTENUM\SAVINSP_3610SF464C,SAVINSP_3610SF464C
+
+
+[LANIER_SP_3600SF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1pcd.psz
+LanguageMonitor = rica1plm,rica1plm.dll
+
+[LANIER_SP_3610SF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1pcd.psz
+LanguageMonitor = rica1plm,rica1plm.dll
+
+[NRG_SP_3600SF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1pcd.psz
+LanguageMonitor = rica1plm,rica1plm.dll
+
+[NRG_SP_3610SF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1pcd.psz
+LanguageMonitor = rica1plm,rica1plm.dll
+
+[RICOH_SP_3600SF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1pcd.psz
+LanguageMonitor = rica1plm,rica1plm.dll
+
+[RICOH_SP_3610SF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1pcd.psz
+LanguageMonitor = rica1plm,rica1plm.dll
+
+[SAVIN_SP_3600SF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1pcd.psz
+LanguageMonitor = rica1plm,rica1plm.dll
+
+[SAVIN_SP_3610SF_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1pcd.psz
+LanguageMonitor = rica1plm,rica1plm.dll
+
+
+[LANIER_SP_3600SF_64.dat.Services]
+AddService = ,0x2
+
+[LANIER_SP_3610SF_64.dat.Services]
+AddService = ,0x2
+
+[NRG_SP_3600SF_64.dat.Services]
+AddService = ,0x2
+
+[NRG_SP_3610SF_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_SP_3600SF_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_SP_3610SF_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_SP_3600SF_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_SP_3610SF_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica1pui.dll,rica89ui.dll
+rica1pui.irj,SP_3600S.irj
+rica1pui.rdj
+rica1pui.rcf,SP_3600S.rcf
+rica1pug.dll,rica89ug.dll
+rica1pug.miz
+rica1pur.dll,rica89ur.dll
+rica1pgr.dll,rica89gr.dll
+rica1pci.dll,rica89ci.dll
+rica1pcd.dll,rica89cd.dll
+rica1pcd.psz
+rica1pcf.cfz
+rica1pcl.ini
+rica1pch.chm,rica89ch.chm
+rica1pcz.dlz,rica89cz.dlz
+rica1pcj.dll,rica89cj.dll
+rica1pct.dll,rica89ct.dll
+rica1pcb.dll,rica89cb.dll
+
+[RPD_COMMON_SYS32]
+rica1plm.dll,rica89lm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD01Pd64.dll,RD01Pd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica1pui.dll
+DriverFile	= rica1pgr.dll
+HelpFile	= rica1pch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica89ui.dll	= 1
+SP_3600S.irj	= 1
+rica1pui.rdj	= 1
+SP_3600S.rcf	= 2
+rica89ug.dll	= 1
+rica1pug.miz	= 1
+rica89ur.dll	= 1
+rica89gr.dll	= 1
+rica89ci.dll	= 1
+rica89cd.dll	= 1
+rica1pcd.psz	= 1
+rica1pcf.cfz	= 1
+rica1pcl.ini	= 1
+rica89ch.chm	= 1
+rica89cz.dlz	= 1
+rica89cj.dll	= 1
+rica89ct.dll	= 1
+rica89cb.dll	= 1
+rica89lm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+RD01Pd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

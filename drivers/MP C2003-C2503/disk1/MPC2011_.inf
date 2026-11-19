@@ -1,0 +1,157 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 12/18/2025,3.1.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%Gestetner%=Gestetner,NTamd64
+%infotec%=infotec,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+
+
+;WindowsXP(amd64)
+[Gestetner.NTamd64]
+"Gestetner MP C2011 PCL 6"=Gestetner_MP_C2011_64.dat,USBPRINT\GestetnerMP_C2011163B,LPTENUM\GestetnerMP_C2011163B,GestetnerMP_C2011163B
+"Gestetner DSc1120 PCL 6"=Gestetner_DSc1120_64.dat,USBPRINT\GestetnerDSc11209FF0,LPTENUM\GestetnerDSc11209FF0,GestetnerDSc11209FF0
+
+[infotec.NTamd64]
+"infotec MP C2011 PCL 6"=infotec_MP_C2011_64.dat,USBPRINT\infotecMP_C20114FC4,LPTENUM\infotecMP_C20114FC4,infotecMP_C20114FC4
+
+[NRG.NTamd64]
+"NRG MP C2011 PCL 6"=NRG_MP_C2011_64.dat,USBPRINT\NRGMP_C201161FA,LPTENUM\NRGMP_C201161FA,NRGMP_C201161FA
+
+[Ricoh.NTamd64]
+"RICOH MP C2011 PCL 6"=RICOH_MP_C2011_64.dat,USBPRINT\RICOHMP_C2011A36B,LPTENUM\RICOHMP_C2011A36B,RICOHMP_C2011A36B
+
+
+[Gestetner_MP_C2011_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Wcd.psz
+LanguageMonitor = rica6Wlm,rica6Wlm.dll
+
+[Gestetner_DSc1120_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Wcd.psz
+LanguageMonitor = rica6Wlm,rica6Wlm.dll
+
+[infotec_MP_C2011_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Wcd.psz
+LanguageMonitor = rica6Wlm,rica6Wlm.dll
+
+[NRG_MP_C2011_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Wcd.psz
+LanguageMonitor = rica6Wlm,rica6Wlm.dll
+
+[RICOH_MP_C2011_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica6Wcd.psz
+LanguageMonitor = rica6Wlm,rica6Wlm.dll
+
+
+[Gestetner_MP_C2011_64.dat.Services]
+AddService = ,0x2
+
+[Gestetner_DSc1120_64.dat.Services]
+AddService = ,0x2
+
+[infotec_MP_C2011_64.dat.Services]
+AddService = ,0x2
+
+[NRG_MP_C2011_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_MP_C2011_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica6Wui.dll,rica89ui.dll
+rica6Wui.irj,MPC2011_.irj
+rica6Wui.rdj
+rica6Wui.rcf,MPC2011_.rcf
+rica6Wug.dll,rica89ug.dll
+rica6Wug.miz
+rica6Wur.dll,rica89ur.dll
+rica6Wgr.dll,rica89gr.dll
+rica6Wci.dll,rica89ci.dll
+rica6Wcd.dll,rica89cd.dll
+rica6Wcd.psz
+rica6Wcf.cfz
+rica6Wcl.ini
+rica6Wch.chm,rica89ch.chm
+rica6Wcz.dlz,rica89cz.dlz
+rica6Wcj.dll,rica89cj.dll
+rica6Wct.dll,rica89ct.dll
+rica6Wcb.dll,rica89cb.dll
+
+[RPD_COMMON_SYS32]
+rica6Wlm.dll,rica89lm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD06Hd64.dll,RD06Hd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica6Wui.dll
+DriverFile	= rica6Wgr.dll
+HelpFile	= rica6Wch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica89ui.dll	= 1
+MPC2011_.irj	= 1
+rica6Wui.rdj	= 1
+MPC2011_.rcf	= 2
+rica89ug.dll	= 1
+rica6Wug.miz	= 1
+rica89ur.dll	= 1
+rica89gr.dll	= 1
+rica89ci.dll	= 1
+rica89cd.dll	= 1
+rica6Wcd.psz	= 1
+rica6Wcf.cfz	= 1
+rica6Wcl.ini	= 1
+rica89ch.chm	= 1
+rica89cz.dlz	= 1
+rica89cj.dll	= 1
+rica89ct.dll	= 1
+rica89cb.dll	= 1
+rica89lm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+RD06Hd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+Gestetner="Gestetner"
+infotec="infotec"
+NRG="NRG"
+DSK= "PCL6 Printer Driver Disk1"

@@ -1,0 +1,167 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 12/18/2025,3.1.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[LANIER.NTamd64]
+"LANIER SP 3600DN PCL 6"=LANIER_SP_3600DN_64.dat,USBPRINT\LANIERSP_3600DN0EBA,LPTENUM\LANIERSP_3600DN0EBA,LANIERSP_3600DN0EBA,LANIERSP_3600DN_EBA
+
+[NRG.NTamd64]
+"NRG SP 3600DN PCL 6"=NRG_SP_3600DN_64.dat,USBPRINT\NRGSP_3600DN776D,LPTENUM\NRGSP_3600DN776D,NRGSP_3600DN776D
+"NRG SP 400DN PCL 6"=NRG_SP_400DN_64.dat,USBPRINT\NRGSP_400DN22E8,LPTENUM\NRGSP_400DN22E8,NRGSP_400DN22E8
+
+[Ricoh.NTamd64]
+"RICOH SP 3600DN PCL 6"=RICOH_SP_3600DN_64.dat,USBPRINT\RICOHSP_3600DN636F,LPTENUM\RICOHSP_3600DN636F,RICOHSP_3600DN636F
+"RICOH SP 400DN PCL 6"=RICOH_SP_400DN_64.dat,USBPRINT\RICOHSP_400DN20D8,LPTENUM\RICOHSP_400DN20D8,RICOHSP_400DN20D8
+
+[SAVIN.NTamd64]
+"SAVIN SP 3600DN PCL 6"=SAVIN_SP_3600DN_64.dat,USBPRINT\SAVINSP_3600DN8E41,LPTENUM\SAVINSP_3600DN8E41,SAVINSP_3600DN8E41
+
+
+[LANIER_SP_3600DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1qcd.psz
+LanguageMonitor = rica1qlm,rica1qlm.dll
+
+[NRG_SP_3600DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1qcd.psz
+LanguageMonitor = rica1qlm,rica1qlm.dll
+
+[NRG_SP_400DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1qcd.psz
+LanguageMonitor = rica1qlm,rica1qlm.dll
+
+[RICOH_SP_3600DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1qcd.psz
+LanguageMonitor = rica1qlm,rica1qlm.dll
+
+[RICOH_SP_400DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1qcd.psz
+LanguageMonitor = rica1qlm,rica1qlm.dll
+
+[SAVIN_SP_3600DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica1qcd.psz
+LanguageMonitor = rica1qlm,rica1qlm.dll
+
+
+[LANIER_SP_3600DN_64.dat.Services]
+AddService = ,0x2
+
+[NRG_SP_3600DN_64.dat.Services]
+AddService = ,0x2
+
+[NRG_SP_400DN_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_SP_3600DN_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_SP_400DN_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_SP_3600DN_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica1qui.dll,rica89ui.dll
+rica1qui.irj,SP_3600D.irj
+rica1qui.rdj
+rica1qui.rcf,SP_3600D.rcf
+rica1qug.dll,rica89ug.dll
+rica1qug.miz
+rica1qur.dll,rica89ur.dll
+rica1qgr.dll,rica89gr.dll
+rica1qci.dll,rica89ci.dll
+rica1qcd.dll,rica89cd.dll
+rica1qcd.psz
+rica1qcf.cfz
+rica1qcl.ini
+rica1qch.chm,rica89ch.chm
+rica1qcz.dlz,rica89cz.dlz
+rica1qcj.dll,rica89cj.dll
+rica1qct.dll,rica89ct.dll
+rica1qcb.dll,rica89cb.dll
+
+[RPD_COMMON_SYS32]
+rica1qlm.dll,rica89lm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD01Qd64.dll,RD01Qd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica1qui.dll
+DriverFile	= rica1qgr.dll
+HelpFile	= rica1qch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica89ui.dll	= 1
+SP_3600D.irj	= 1
+rica1qui.rdj	= 1
+SP_3600D.rcf	= 2
+rica89ug.dll	= 1
+rica1qug.miz	= 1
+rica89ur.dll	= 1
+rica89gr.dll	= 1
+rica89ci.dll	= 1
+rica89cd.dll	= 1
+rica1qcd.psz	= 1
+rica1qcf.cfz	= 1
+rica1qcl.ini	= 1
+rica89ch.chm	= 1
+rica89cz.dlz	= 1
+rica89cj.dll	= 1
+rica89ct.dll	= 1
+rica89cb.dll	= 1
+rica89lm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+RD01Qd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"

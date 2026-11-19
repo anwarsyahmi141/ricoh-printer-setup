@@ -1,0 +1,147 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2025 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer	= 12/18/2025,3.1.0.0
+CatalogFile	= RICOHJBP.cat
+
+[Manufacturer]
+%LANIER%=LANIER,NTamd64
+%NRG%=NRG,NTamd64
+%Ricoh%=Ricoh,NTamd64
+%SAVIN%=SAVIN,NTamd64
+
+
+;WindowsXP(amd64)
+[LANIER.NTamd64]
+"LANIER SP 6430DN PCL 6"=LANIER_SP_6430DN_64.dat,USBPRINT\LANIERSP_6430DNDFC1,LPTENUM\LANIERSP_6430DNDFC1,LANIERSP_6430DNDFC1
+
+[NRG.NTamd64]
+"NRG SP 6430DN PCL 6"=NRG_SP_6430DN_64.dat,USBPRINT\NRGSP_6430DN6795,LPTENUM\NRGSP_6430DN6795,NRGSP_6430DN6795
+
+[Ricoh.NTamd64]
+"RICOH SP 6430DN PCL 6"=RICOH_SP_6430DN_64.dat,USBPRINT\RICOHSP_6430DNB216,LPTENUM\RICOHSP_6430DNB216,RICOHSP_6430DNB216
+
+[SAVIN.NTamd64]
+"SAVIN SP 6430DN PCL 6"=SAVIN_SP_6430DN_64.dat,USBPRINT\SAVINSP_6430DN5F3A,LPTENUM\SAVINSP_6430DN5F3A,SAVINSP_6430DN5F3A
+
+
+[LANIER_SP_6430DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Pcd.psz
+LanguageMonitor = rica3Plm,rica3Plm.dll
+
+[NRG_SP_6430DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Pcd.psz
+LanguageMonitor = rica3Plm,rica3Plm.dll
+
+[RICOH_SP_6430DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Pcd.psz
+LanguageMonitor = rica3Plm,rica3Plm.dll
+
+[SAVIN_SP_6430DN_64.dat]
+CopyFiles	= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection	= RPD_DATA
+DataFile	= rica3Pcd.psz
+LanguageMonitor = rica3Plm,rica3Plm.dll
+
+
+[LANIER_SP_6430DN_64.dat.Services]
+AddService = ,0x2
+
+[NRG_SP_6430DN_64.dat.Services]
+AddService = ,0x2
+
+[RICOH_SP_6430DN_64.dat.Services]
+AddService = ,0x2
+
+[SAVIN_SP_6430DN_64.dat.Services]
+AddService = ,0x2
+
+
+[RPD_FILES]
+rica3Pui.dll,rica89ui.dll
+rica3Pui.irj,SP_6430D.irj
+rica3Pui.rdj
+rica3Pui.rcf,SP_6430D.rcf
+rica3Pug.dll,rica89ug.dll
+rica3Pug.miz
+rica3Pur.dll,rica89ur.dll
+rica3Pgr.dll,rica89gr.dll
+rica3Pci.dll,rica89ci.dll
+rica3Pcd.dll,rica89cd.dll
+rica3Pcd.psz
+rica3Pcf.cfz
+rica3Pcl.ini
+rica3Pch.chm,rica89ch.chm
+rica3Pcz.dlz,rica89cz.dlz
+rica3Pcj.dll,rica89cj.dll
+rica3Pct.dll,rica89ct.dll
+rica3Pcb.dll,rica89cb.dll
+
+[RPD_COMMON_SYS32]
+rica3Plm.dll,rica89lm.dll,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dll,,0x00000020
+mfricr64.dll,mfricr64.dll,,0x00000020
+RD03Pd64.dll,RD03Pd64.dll,,0x00000020
+
+[RPD_DATA]
+ConfigFile	= rica3Pui.dll
+DriverFile	= rica3Pgr.dll
+HelpFile	= rica3Pch.chm
+
+[DestinationDirs]
+DefaultDestDir	= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,RICOHJBP.cab,,
+2 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware	=TRUE
+
+[SourceDisksFiles.amd64]
+rica89ui.dll	= 1
+SP_6430D.irj	= 1
+rica3Pui.rdj	= 1
+SP_6430D.rcf	= 2
+rica89ug.dll	= 1
+rica3Pug.miz	= 1
+rica89ur.dll	= 1
+rica89gr.dll	= 1
+rica89ci.dll	= 1
+rica89cd.dll	= 1
+rica3Pcd.psz	= 1
+rica3Pcf.cfz	= 1
+rica3Pcl.ini	= 1
+rica89ch.chm	= 1
+rica89cz.dlz	= 1
+rica89cj.dll	= 1
+rica89ct.dll	= 1
+rica89cb.dll	= 1
+rica89lm.dll	= 1
+ricdb64.dll	= 1
+mfricr64.dll	= 1
+RD03Pd64.dll	= 1
+
+[Strings]
+Ricoh="Ricoh"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"
