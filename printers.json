@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "id": "c3503_160",
+    "displayName": "Ricoh MP C3503 (160)",
+    "modelName": "RICOH MP C3503 PCL 6",
+    "ip": "192.168.23.160",
+    "infRelativePath": "drivers\\MP C3003-C3503\\disk1\\MPC3003_.inf",
+    "location": "Main Office (192.168.23.160)"
+  },
+  {
+    "id": "c3503_177",
+    "displayName": "Ricoh MP C3503 (177)",
+    "modelName": "RICOH MP C3503 PCL 6",
+    "ip": "192.168.23.177",
+    "infRelativePath": "drivers\\MP C3003-C3503\\disk1\\MPC3003_.inf",
+    "location": "Office Department (192.168.23.177)"
+  },
+  {
+    "id": "c2800_152",
+    "displayName": "Ricoh Aficio MP C2800",
+    "modelName": "RICOH Aficio MP C2800 PCL 6",
+    "ip": "192.168.23.152",
+    "infRelativePath": "drivers\\MP C2800-C3300\\disk1\\OEMSETUP.INF",
+    "location": "HR / Accounts (192.168.23.152)"
+  },
+  {
+    "id": "c2000_168",
+    "displayName": "Ricoh IM C2000",
+    "modelName": "RICOH IM C2000 PCL 6",
+    "ip": "192.168.23.168",
+    "infRelativePath": "drivers\\IM C2000-C2500\\disk1\\MPC2000_.inf",
+    "location": "Operations / Meeting (192.168.23.168)"
+  }
+]

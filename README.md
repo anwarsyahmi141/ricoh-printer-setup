@@ -46,6 +46,13 @@ An enterprise-ready, standalone Windows desktop application developed in native 
 ### 6. 🗑️ Clean Client Management
 * Allows technicians to remove previous client printers with 1 click when preparing setup packages for a new company.
 
+### 7. 📖 Scanner Address Book Manager (Bulk Scan-to-Email & Scan-to-Folder SMB)
+* **Direct Network Synchronization:** Connects to any Ricoh MFP via `/DH/udirectory` network service to read and push contacts directly.
+* **Bulk Scan Destinations:** Quickly manage Scan-to-Email and Scan-to-Folder (SMB/FTP) in a fast desktop grid instead of tedious browser forms.
+* **1-Click Multi-MFP Clone:** Effortlessly clone/copy the complete address book from an old machine to a new replacement printer.
+* **Smart SMB Path Helper:** Auto-generates local UNC paths (`\\<PC-Name>\Scans\<User>`) and login credentials with 1 click.
+* **Universal Ricoh CSV & Client Profiles:** Export/Import official Ricoh Web Image Monitor CSVs or save `.json` client templates to deploy across branches.
+
 ---
 
 ## 🗂️ Project Structure
